@@ -1,4 +1,13 @@
 def calculate(expression: str) -> float:
+    if "+" in expression:
+        a, b = map(float, expression.split("+"))
+        return a + b
+    if "-" in expression:
+        a, b = map(float, expression.split("-"))
+        return a - b
+    if "*" in expression:
+        a, b = map(float, expression.split("*"))
+        return a * b
     if "/" in expression:
         a, b = map(float, expression.split("/"))
         return a / b
