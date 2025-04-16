@@ -1,8 +1,9 @@
 def calculate(expression: str) -> float:
-    if "-" in expression:
-        a, b = map(float, expression.split("-"))
-        return a - b
+    if "*" in expression:
+        a, b = map(float, expression.split("*"))
+        return a * b
     raise NotImplementedError("Operación no soportada")
+
 
 def main():
     print("Calculadora - Escribe una operación (ej. 2 + 2). Presiona 'c' para borrar.")
